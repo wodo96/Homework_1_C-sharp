@@ -52,11 +52,10 @@ namespace Homework_1_C_sharp
             if (!(this.richTextBox1.Text.Length == 0))
             {
                 this.isBeenSaved = true;
-                this.labelResponseOutput.Visible = true;
-                this.labelResponseOutput.Text = this.richTextBox1.Text;
+                this.textBox2.Visible = true;
+                this.textBox2.Text = this.richTextBox1.Text;
                 this.button1.BackColor = System.Drawing.Color.Green;
                 this.button1.Text = "Saved!";
-                this.labelResponseOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             }
             else
             {
@@ -83,8 +82,9 @@ namespace Homework_1_C_sharp
             this.richTextBox1.Text = "";
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Text = "Save";
-            this.labelResponseOutput.Visible = false;
+            this.textBox2.Visible = false;
         }
+
     }
 
 }

@@ -31,9 +31,9 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.labelResponseOutput = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -73,18 +73,6 @@
             this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             this.button1.MouseHover += new System.EventHandler(this.button1_MouseHover);
             // 
-            // labelResponseOutput
-            // 
-            this.labelResponseOutput.AccessibleName = "labelResponseOutput";
-            this.labelResponseOutput.AutoSize = true;
-            this.labelResponseOutput.Location = new System.Drawing.Point(350, 300);
-            this.labelResponseOutput.MaximumSize = new System.Drawing.Size(200, 0);
-            this.labelResponseOutput.Name = "labelResponseOutput";
-            this.labelResponseOutput.Size = new System.Drawing.Size(42, 15);
-            this.labelResponseOutput.TabIndex = 3;
-            this.labelResponseOutput.Text = "Save_1";
-            this.labelResponseOutput.Visible = false;
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(435, 265);
@@ -104,18 +92,33 @@
             this.textBox1.Location = new System.Drawing.Point(326, 47);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(110, 45);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "Write the text that you want to save.";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(184, 323);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox2.Size = new System.Drawing.Size(400, 105);
+            this.textBox2.TabIndex = 6;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.labelResponseOutput);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.richTextBox1);
@@ -132,8 +135,8 @@
         private RichTextBox richTextBox1;
         private CheckBox checkBox1;
         private Button button1;
-        private Label labelResponseOutput;
         private Button button2;
         private TextBox textBox1;
+        private TextBox textBox2;
     }
 }
